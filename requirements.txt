@@ -1,0 +1,6 @@
+pandas==1.5.2
+PyPDF2==2.12.1
+camelot_py==0.10.1
+openpyxl==3.0.10
+python-docx==0.8.11
+opencv_python==4.6.0.66
