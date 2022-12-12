@@ -9,3 +9,5 @@ params = {
     "objectId": None,
     "fileId": None
 }
+
+extentions = [".xls", ".doc", ".xlsx", ".docx", ".pdf"]

@@ -33,6 +33,10 @@ python parser.py  --directoryIn=directoryIn --directoryOut=directoryOut --fileIn
 --fileOut="/var/www/www-root/data/www/costana.testdom.ru/costana/storage/app/public/projects/4/specification/Тестовый проект/6312118d2f534.xml"
 ```
 
+```bash
+python main.py  --directoryIn="/Users/meryzhanybekova/Desktop/Work Project/parsing_files/directoryIn" --directoryOut="/Users/meryzhanybekova/Desktop/Work Project/parsing_files/directoryOut" --fileOut="/Users/meryzhanybekova/Desktop/Work Project/parsing_files/directoryOut/test.xml" --fileIn="/Users/meryzhanybekova/Desktop/Work Project/parsing_files/constant/pdf/1109-27-ОВ1.pdf"
+```
+
 ## License
 
 [Telegram](https://t.me/baha996)

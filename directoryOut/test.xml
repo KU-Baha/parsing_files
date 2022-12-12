@@ -1,0 +1,3541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<elements>
+		<element type="element">
+			<name>Техноэласт ЭПП</name>
+			<code/>
+			<type/>
+			<customer/>
+			<unit>м2</unit>
+			<count/>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>усиление</note>
+		</element>
+		<element type="element">
+			<name>Мастика ТЕХНОНИКОЛЬ №71</name>
+			<code/>
+			<type/>
+			<customer/>
+			<unit>-</unit>
+			<count/>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Водонепроницаемый стакан</name>
+			<code/>
+			<type/>
+			<customer/>
+			<unit>-</unit>
+			<count/>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Биполь ЭПП</name>
+			<code/>
+			<type/>
+			<customer/>
+			<unit>м2</unit>
+			<count/>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Пена монтажная ТЕХНОНИКОЛЬ PROFESSIONAL 70</name>
+			<code/>
+			<type/>
+			<customer/>
+			<unit>шт.</unit>
+			<count/>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>баллоны</note>
+		</element>
+		<element type="element">
+			<name>Герметик полиуретановый ТЕХНОНИКОЛЬ 2К</name>
+			<code/>
+			<type/>
+			<customer/>
+			<unit></unit>
+			<count/>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Металлический стакан</name>
+			<code/>
+			<type/>
+			<customer/>
+			<unit></unit>
+			<count/>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Техноэласт ПЛАМЯ СТОП</name>
+			<code/>
+			<type/>
+			<customer/>
+			<unit>м2</unit>
+			<count/>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Саморез остроконечный 4,8х50</name>
+			<code/>
+			<type/>
+			<customer/>
+			<unit>шт.</unit>
+			<count/>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Анкерный элемент ТЕХНОНИКОЛЬ 8х45</name>
+			<code/>
+			<type/>
+			<customer/>
+			<unit>шт.</unit>
+			<count/>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>2</name>
+			<code>4</code>
+			<type>3</type>
+			<customer>5</customer>
+			<unit>6</unit>
+			<count>7</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>9</note>
+		</element>
+		<element type="element">
+			<name>Бандаж с пряжкой для изоляции</name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>1001</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Металл для крепления вентиляционных систем</name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit>кг</unit>
+			<count>176</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Скотч алюминиевый</name>
+			<code></code>
+			<type>ЛАС L50м-h050мм</type>
+			<customer>ТЕХНОНИКОЛЬ</customer>
+			<unit>м.</unit>
+			<count>2320</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name></name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Вытяжная установка L=3395 м3/ч, P=180 Па, Ny= 1,1кВт, наружное исполнение</name>
+			<code></code>
+			<type>LITENED 70-40 G1.31-1.1x30.R [Напольная]</type>
+			<customer>NED</customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name>Клапан нормально открытый с клеммной колодкой</name>
+			<code></code>
+			<type>КЛОП-2(60)-НО-600x400-МВ(220)</type>
+			<customer>ВИНГС-М</customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Клапан нормально открытый</name>
+			<code></code>
+			<type>КЛОП-2(120)-НО-160(Нп)-МВ(220)-Н</type>
+			<customer>ВИНГС-М</customer>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Клапан противопожарный нормально открытый</name>
+			<code></code>
+			<type>КЛОП-3(90)-НО-К-200х200-МВ(220)-СН-В-К</type>
+			<customer>ВИНГС-М</customer>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Клапан противопожарный нормально открытый</name>
+			<code></code>
+			<type>КЛОП-3(90)-НО-К-300х200-МВ(24)-СН-В-К</type>
+			<customer>ВИНГС-М</customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Дроссель-клапан для круглых воздуховодов</name>
+			<code></code>
+			<type>КВК-125М</type>
+			<customer>Арктика</customer>
+			<unit>шт.</unit>
+			<count>57</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Дроссель-клапан для круглых воздуховодов</name>
+			<code></code>
+			<type>КВК-160М</type>
+			<customer>Арктика</customer>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Диффузор пластиковый универсальный Ø125</name>
+			<code></code>
+			<type>ДПУ-М 125</type>
+			<customer>Арктика</customer>
+			<unit>шт.</unit>
+			<count>5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм 150x150</name>
+			<code></code>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>7,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм 200x150</name>
+			<code></code>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>29</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм 200x200</name>
+			<code></code>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>10,9</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм Ø125</name>
+			<code></code>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>76,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм Ø160</name>
+			<code></code>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>7,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм Ø200</name>
+			<code></code>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>2,9</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм 300x200</name>
+			<code></code>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>0,8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм 600x400</name>
+			<code></code>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>1,2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из черной стали S=1,2мм 600x400</name>
+			<code></code>
+			<type>ГОСТ 19904-90</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>0,2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод круглого сечения из оцинкованной стали S=0,8мм 30° Ø160-Ø160</name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод круглого сечения из оцинкованной стали S=0,8мм 45° Ø200-Ø200</name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод круглого сечения из оцинкованной стали S=0,8мм 90° Ø125-Ø125</name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>24</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод круглого сечения из оцинкованной стали S=0,8мм 90° Ø200-Ø200</name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 30° 150x150-150x150</name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 30° 200x150-200x150</name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 30° 200x200-200x200</name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 90° 600x400-600x400</name>
+			<code></code>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name></name>
+			<code>Рев.</code>
+			<type>Дата</type>
+			<customer>Участок начертеже</customer>
+			<unit>Содержание выпуска / изменений</unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов круглого сечения из оцинкованной стали S=0,8мм Ø160-Ø125</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов круглого сечения из оцинкованной стали S=0,8мм Ø200-Ø160</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов прямоугольного сечения из оцинкованной стали S=0,8мм 200x200-150x150</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов прямоугольного сечения из оцинкованной стали S=0,8мм 200x200-150x200</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов прямоугольного сечения из оцинкованной стали S=0,8мм 200x200-200x150</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов прямоугольного сечения из оцинкованной стали S=0,8мм 300x200-200x200</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов прямоугольного сечения из оцинкованной стали S=0,8мм 740x440-600x400</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из оцинкованной стали S=0,8мм 150x150-Ø125</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из оцинкованной стали S=0,8мм 200x150-Ø125</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>115,3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Радиальный вентилятор KVRKVR 160/1</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Регулирующая заслонка для круглых каналовKCH 200</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>ШумоглушительKNK 160/6</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Сетка защитная металлическая оцинкованная 20х20 мм Ø200ГОСТ 3826-82</type>
+			<customer/>
+			<unit>m²</unit>
+			<count>0,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм Ø160ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>30,8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм Ø200ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод круглого сечения из оцинкованной стали S=0,8мм 90° Ø160-Ø160</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов круглого сечения из оцинкованной. стали S=0,8мм Ø200-Ø160</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>22</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Радиальный вентилятор KVRKVR 250/1</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан нормально открытыйКЛОП-2(60)-НО-100(Нп)-МВ(220)-Н</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан нормально открытыйКЛОП-2(60)-НО-160(Нп)-МВ(220)-Н</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально открытыйКЛОП-3(90)-НО-К-200х150-МВ(220)-СН-В-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Дроссель-клапан для круглых воздуховодовКВК-100М</type>
+			<customer/>
+			<unit>Арктикашт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Дроссель-клапан для круглых воздуховодовКВК-125М</type>
+			<customer/>
+			<unit>Арктикашт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Дроссель-клапан для круглых воздуховодовКВК-160М</type>
+			<customer/>
+			<unit>Арктикашт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Регулирующая заслонка для круглых каналовKCH 250</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>ШумоглушительKNK 250/6</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Решетка вентиляционная 200х100АМН 200х100</type>
+			<customer/>
+			<unit>Арктикашт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Решетка вентиляционная 250х100АМН 250х100</type>
+			<customer/>
+			<unit>Арктикашт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм 150x100ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>2,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм 200x100ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм 200x150ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>27,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм 250x100ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм Ø100ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>12,4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм Ø125ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>5,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм Ø160ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>15,4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм Ø200ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>1,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Заглушка воздуховода торцевая прямоугольного сечения из оцинкованной стали S=0,8мм 100x150</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Заглушка круглая из оцинкованной стали S=0,8мм Ø125</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Заглушка круглая из оцинкованной стали S=0,8мм Ø200</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод круглого сечения из оцинкованной стали S=0,8мм 30° Ø200-Ø200</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод круглого сечения из оцинкованной стали S=0,8мм 45° Ø100-Ø100</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод круглого сечения из оцинкованной стали S=0,8мм 90° Ø100-Ø100</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод круглого сечения из оцинкованной стали S=0,8мм 90° Ø160-Ø160</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 30° 100x150-100x150</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 45° 150x200-150x200</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 90° 150x100-150x100</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 90° 200x150-200x150</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов круглого сечения из оцинкованной стали S=0,8мм Ø250-Ø200</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов прямоугольного сечения из оцинкованной стали S=0,8мм 200x150-150x200</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из оцинкованной стали S=0,8мм 100x150-Ø100</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из оцинкованной стали S=0,8мм 150x100-Ø100</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из оцинкованной стали S=0,8мм Ø160-150x100</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из оцинкованной стали S=0,8мм Ø200-200x150</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>32,7</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан нормально открытыйКЛОП-2(60)-НО-125(Нп)-МВ(220)-Н</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм Ø125ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>30,8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод круглого сечения из оцинкованной стали S=0,8мм 90° Ø125-Ø125</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>18,4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально открытыйКЛОП-3(90)-НО-К-200х200-МВ(220)-СН-В-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально открытыйКЛОП-3(90)-НО-К-250х150-МВ(220)-СН-В-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм 200x200ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>24,8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм 250x150ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>5,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 45° 150x250-150x250</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 90° 200x200-200x200</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 90° 250x150-250x150</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов прямоугольного сечения из оцинкованной стали плоский S=0,8мм200x200-250x150</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>32,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из оцинкованной стали S=0,8мм Ø125ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>29,8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>17,8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально открытыйКЛОП-3(90)-НО-К-250х300-МВ(220)-СН-В-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально открытыйКЛОП-3(90)-НО-К-300х250-МВ(220)-СН-В-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм 300x250</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>30,7</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 45° 250x300-250x300</name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 90° 300x250-300x250</name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Переход воздуховодов прямоугольного сечения из оцинкованной стали S=0,8мм 250x300-300x250</name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Огнезащитное покрытие EI60</name>
+			<code/>
+			<type>ТЕХНО 80 ОП Ф</type>
+			<customer>ТЕХНОНИКОЛЬ</customer>
+			<unit>м</unit>
+			<count>43,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name></name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Радиальный вентилятор KVR</name>
+			<code/>
+			<type>KVR 200/1</type>
+			<customer>NED</customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name>Регулирующая заслонка для круглых каналов</name>
+			<code/>
+			<type>KCH 200</type>
+			<customer>NED</customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Шумоглушитель</name>
+			<code/>
+			<type>KNK 200/6</type>
+			<customer>NED</customer>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Сетка защитная металлическая оцинкованная 20х20 мм Ø200</name>
+			<code/>
+			<type>ГОСТ 3826-82</type>
+			<customer></customer>
+			<unit>m²</unit>
+			<count>0,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм Ø125</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>31,7</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм Ø200</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>0,2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод круглого сечения из оцинкованной стали S=0,8мм 90° Ø125-Ø125</name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Переход воздуховодов круглого сечения из оцинкованной стали S=0,8мм Ø200-Ø125</name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Огнезащитное покрытие EI60</name>
+			<code/>
+			<type>ТЕХНО 80 ОП Ф</type>
+			<customer>ТЕХНОНИКОЛЬ</customer>
+			<unit>м</unit>
+			<count>19,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name></name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм Ø200</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>30,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод круглого сечения из оцинкованной стали S=0,8мм 45° Ø200-Ø200</name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод круглого сечения из оцинкованной стали S=0,8мм 90° Ø200-Ø200</name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Огнезащитное покрытие EI60</name>
+			<code/>
+			<type>ТЕХНО 80 ОП Ф</type>
+			<customer>ТЕХНОНИКОЛЬ</customer>
+			<unit>м</unit>
+			<count>25,4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name></name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Сетка защитная металлическая оцинкованная 20х20 мм 800x300</name>
+			<code/>
+			<type>ГОСТ 3826-82</type>
+			<customer></customer>
+			<unit>m²</unit>
+			<count>0,3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм 800x300</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer></customer>
+			<unit>м</unit>
+			<count>0,3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Огнезащитное покрытие EI60</name>
+			<code/>
+			<type>ТЕХНО 80 ОП Ф</type>
+			<customer>ТЕХНОНИКОЛЬ</customer>
+			<unit>м</unit>
+			<count>0,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name></name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Компенсатор линейного теплового расширения СОМ-560</name>
+			<code/>
+			<type>СОМ 560-КАНАЛ-150x55-Ц</type>
+			<customer>ВЕЗА</customer>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name></name>
+			<code/>
+			<type></type>
+			<customer></customer>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Вентилятор радиальный дымоудаления</name>
+			<code/>
+			<type>VTR-DU-600-90B-11x10-L0</type>
+			<customer>NED</customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name>Клапан противопожарный нормально закрытый</name>
+			<code/>
+			<type>КЛОП-3(90)-НЗ-К-900х500-МВE(220)-СН-В-К</type>
+			<customer>ВИНГС-М</customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Клапан противопожарный нормально закрытый</name>
+			<code/>
+			<type>КЛОП-3(90)-НЗ-К-1400х450-МВE(220)-СН-Г-К</type>
+			<customer>ВИНГС-М</customer>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Клапан противопожарный нормально закрытый</name>
+			<code/>
+			<type>КЛОП-3(90)-НЗ-ЛК-500х900-МВE(220)-СН-Г-К</type>
+			<customer>ВИНГС-М</customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Клапан противопожарный нормально закрытый</name>
+			<code/>
+			<type>КЛОП-3(90)-НЗ-ЛК-1000х600-МВE(220)-СН-Г-К</type>
+			<customer>ВИНГС-М</customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Компенсатор линейного теплового расширения СОМ-560</name>
+			<code/>
+			<type>СОМ 560-КАНАЛ-90x50-Ц</type>
+			<customer>ВЕЗА</customer>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Декоративная решетка прямоугольного сечения</name>
+			<code/>
+			<type>РКДМ-900x500-Р(Ар)</type>
+			<customer>ВИНГС-М</customer>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Декоративная решетка прямоугольного сечения</name>
+			<code/>
+			<type>РКДМ-1000x600-Р(Ар)</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Декоративная решетка прямоугольного сечения</name>
+			<code/>
+			<type>РКДМ-1400x450-Р(Ар)</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Зонт защитный</name>
+			<code/>
+			<type>ЗОНТ-ВРАН 090</type>
+			<customer/>
+			<unit>Везашт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из черной стали S=1,2мм 300x200</name>
+			<code/>
+			<type>ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из черной стали S=1,2мм 600x550</name>
+			<code/>
+			<type>ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>2,2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из черной стали S=1,2мм 900x450</name>
+			<code/>
+			<type>ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из черной стали S=1,2мм 900x500</name>
+			<code/>
+			<type>ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>29,2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из черной стали S=1,2мм 900x550</name>
+			<code/>
+			<type>ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из черной стали S=1,2мм 1000x600</name>
+			<code/>
+			<type>ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из черной стали S=1,2мм 1100x550</name>
+			<code/>
+			<type>ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из черной стали S=1,2мм 1400x450</name>
+			<code/>
+			<type>ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Заглушка воздуховода торцевая прямоугольного сечения из черной стали S=1,2мм 300x200</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Заглушка воздуховода торцевая прямоугольного сечения из черной стали S=1,2мм 900x500</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Заглушка воздуховода торцевая прямоугольного сечения из черной стали S=1,2мм 900x550</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Заглушка воздуховода торцевая прямоугольного сечения из черной стали S=1,2мм 1400x450</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод прямоугольного сечения из черной стали S=1,2мм 90° 500x900-500x900</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод прямоугольного сечения из черной стали S=1,2мм 90° 900x500-900x500</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Переход воздуховодов прямоугольного сечения из черной стали S=1,2мм 633x1133-530x1090</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Переход воздуховодов прямоугольного сечения из черной стали S=1,2мм 1400x450-900x450</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Переход воздуховодов прямоугольного сечения из черной стали плоский S=1,2мм600x550-300x200</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Переход с круглого на прямоугольное сечение из черной стали S=1,2мм Ø900-900x500</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Огнезащитное покрытие EI60</name>
+			<code/>
+			<type>ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>95,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name></name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Водяной нагреватель для круглых каналов KWH</name>
+			<code/>
+			<type>KWN 200/2</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Радиальный вентилятор KVR</name>
+			<code/>
+			<type>KVR 200/1</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name>Клапан нормально открытый</name>
+			<code/>
+			<type>КЛОП-2(60)-НО-125(Нп)-МВ(220)-Н</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Клапан противопожарный нормально открытый</name>
+			<code/>
+			<type>КЛОП-3(90)-НО-К-300х150-МВ(220)-СН-В-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Дроссель-клапан для круглых воздуховодов</name>
+			<code/>
+			<type>КВК-125М</type>
+			<customer/>
+			<unit>Арктикашт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Регулирующая заслонка для круглых каналов</name>
+			<code/>
+			<type>KCH 200</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Фильтр кассетный для круглых каналов KFC</name>
+			<code/>
+			<type>KFC 200</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Шумоглушитель</name>
+			<code/>
+			<type>KNK 200/6</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Решетка вентиляционная 250х100</name>
+			<code/>
+			<type>АМН 250х100</type>
+			<customer/>
+			<unit>Арктикашт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Сетка защитная металлическая оцинкованная 20х20 мм 300x150</name>
+			<code/>
+			<type>ГОСТ 3826-82</type>
+			<customer/>
+			<unit>m²</unit>
+			<count>0,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм 250x100</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм 250x150</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм Ø125</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>23,7</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм Ø200</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм 300x150</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>15,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Воздуховод из оцинкованной стали S=0,8мм Ø200</name>
+			<code/>
+			<type>ГОСТ 14918-80</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Заглушка круглая из оцинкованной стали S=0,8мм Ø125</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name>Отвод круглого сечения из оцинкованной стали S=0,8мм 90° Ø125-Ø125</name>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 30° 150x250-150x250</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 45° 150x300-150x300</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из оцинкованной стали S=0,8мм 90° 300x150-300x150</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из оцинкованной стали S=0,8мм 250x150-Ø125</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из оцинкованной стали S=0,8мм 250x150-Ø200</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из оцинкованной стали S=0,8мм 300x150-Ø200</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>27,5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Вентилятор подпора осевой VOCVOC 50-3х30</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально закрытыйКЛОП-3(90)-НЗ-ЛК-800х450-МВE(220)-СН-Г-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально закрытыйКЛОП-3(90)-НЗ-С-1000х700-МВE(220)-ВН-Г-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Декоративная решетка прямоугольного сеченияРКДМ-790x1090-Р(Вр)</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Сетка защитная металлическая оцинкованная 20х20 мм Ø710ГОСТ 3826-82</type>
+			<customer/>
+			<unit>m²</unit>
+			<count>0,5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм 800x450ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>21,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм 1000x700ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм Ø710ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>1,9</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Заглушка воздуховода торцевая прямоугольного сечения из черной стали S=1,2мм 800x450</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из черной стали S=1,2мм 90° 450x800-450x800</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов круглого сечения из черной стали S=1,2мм Ø710-Ø500</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из черной стали S=1,2мм 800x450-Ø500</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>67,4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Вентилятор подпора осевой VOCVOC 63-5,5х30</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально закрытыйКЛОП-3(90)-НЗ-ЛК-1000х800-МВE(220)-СН-Г-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Сетка защитная металлическая оцинкованная 20х20 мм 800x1000ГОСТ 3826-82</type>
+			<customer/>
+			<unit>m²</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Сетка защитная металлическая оцинкованная 20х20 мм 1000x800ГОСТ 3826-82</type>
+			<customer/>
+			<unit>m²</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм 1000x800ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>6,4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из черной стали S=1,2мм 45° 1000x800-1000x800</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из черной стали S=1,2мм 60° 1000x800-1000x800</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из черной стали S=1,2мм 90° 800x1000-800x1000</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из черной стали S=1,2мм 1000x800-Ø622</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>35,9</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Вентилятор подпора осевой VOCVOC 56-5,5х30</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально закрытыйКЛОП-3(90)-НЗ-ЛК-1000х700-МВE(220)-СН-Г-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Сетка защитная металлическая оцинкованная 20х20 мм 900x800ГОСТ 3826-82</type>
+			<customer/>
+			<unit>m²</unit>
+			<count>0,9</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Сетка защитная металлическая оцинкованная 20х20 мм 1000x700ГОСТ 3826-82</type>
+			<customer/>
+			<unit>m²</unit>
+			<count>0,8</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм 900x800ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>1,7</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм 1000x700ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из черной стали S=1,2мм 45° 1000x700-1000x700</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из черной стали S=1,2мм 90° 700x1000-700x1000</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из черной стали S=1,2мм 900x800-Ø560</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из черной стали S=1,2мм 1000x700-Ø560</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>34,5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Приточная установка L=290 м3/ч, P=100 Па, Ny= 0,33кВт, наружное исполнениеVR 40-20/20.4D</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально закрытыйКЛОП-3(90)-НЗ-ЛК-250х150-МВE(220)-СН-Г-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально закрытыйКЛОП-3(90)-НЗ-С-400х250-МВE(220)-ВН-Г-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Кассетный фильтр для прямоугольных каналовFRC 40-20</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Электрический нагреватель для прямоугольных каналовEA 40-20/6</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Декоративная решетка прямоугольного сеченияРКДМ-490x340-(Вр)</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>4</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Сетка защитная металлическая оцинкованная 20х20 мм 400x200ГОСТ 3826-82</type>
+			<customer/>
+			<unit>m²</unit>
+			<count>0,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм 250x150ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>20,9</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм 400x200ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>1,5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм 400x250ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>0,3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Заглушка воздуховода торцевая прямоугольного сечения из черной стали S=1,2мм 150x250</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из черной стали S=1,2мм 90° 150x250-150x250</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов прямоугольного сечения из черной стали S=1,2мм 400x200-250x150</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>25,1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Вентилятор подпора осевой VOCVOC 45-2,2х30</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально закрытыйКЛОП-3(90)-НЗ-К-600х400-МВE(220)-СН-В-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально закрытыйКЛОП-3(90)-НЗ-ЛК-600х400-МВE(220)-СН-Г-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально закрытыйКЛОП-3(90)-НЗ-С-900х500-МВE(220)-ВН-Г-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Декоративная решетка прямоугольного сеченияРКДМ-590x990-Р(Вр)</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Сетка защитная металлическая оцинкованная 20х20 мм 600x400ГОСТ 3826-82</type>
+			<customer/>
+			<unit>m²</unit>
+			<count>0,3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Сетка защитная металлическая оцинкованная 20х20 мм Ø560ГОСТ 3826-82</type>
+			<customer/>
+			<unit>m²</unit>
+			<count>0,3</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм 600x400ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>31,6</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Воздуховод из черной стали S=1,2мм Ø560ГОСТ 19904-90</type>
+			<customer/>
+			<unit>м</unit>
+			<count>1,7</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из черной стали S=1,2мм 90° 400x600-400x600</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Отвод прямоугольного сечения из черной стали S=1,2мм 90° 600x400-600x400</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>5</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход воздуховодов круглого сечения из черной стали S=1,2мм Ø560-Ø450</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Переход с круглого на прямоугольное сечение из черной стали S=1,2мм 600x400-Ø450</type>
+			<customer/>
+			<unit>шт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Огнезащитное покрытие EI60ТЕХНО 80 ОП Ф</type>
+			<customer/>
+			<unit>ТЕХНОНИКОЛЬм</unit>
+			<count>87,2</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type></type>
+			<customer/>
+			<unit></unit>
+			<count></count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Вентилятор подпора осевой VOCVOC 50-3х30</type>
+			<customer/>
+			<unit>NEDшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note>см. КП№ND20-013102</note>
+		</element>
+		<element type="element">
+			<name/>
+			<code/>
+			<type>Клапан противопожарный нормально закрытыйКЛОП-3(90)-НЗ-ЛК-850х700-МВE(220)-СН-Г-К</type>
+			<customer/>
+			<unit>ВИНГС-Мшт.</unit>
+			<count>1</count>
+			<price_work/>
+			<full_price_work/>
+			<price_material/>
+			<full_price_material/>
+			<note></note>
+		</element>
+	</elements>
+</root>

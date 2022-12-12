@@ -1,29 +1,18 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-
 import sys as Sys
 import os as Os
-import pandas as Ps
 import pathlib as Pt
-import json as Jn
-import PyPDF2 as Pp2
-import camelot as Ct
-import openpyxl as Ox
-import zipfile as Zf
 import re as Re
-import docx as Dc
-import io as Io
-import subprocess as Sp
 import numpy as Np
 from xml.dom import minidom
 import multiprocessing as Mp
 import math as Mt
-import time as Tm
 
 Sys.setrecursionlimit(15000)
 
 
-class Parser:
+class BaseParser:
     debug = False
     params = None
     manager = None
@@ -105,9 +94,9 @@ class Parser:
         if len(errors):
             self.errorsSignal(errors)
         else:
-            self.checkDirectory()
+            self.check_directory()
 
-    def checkDirectory(self):
+    def check_directory(self):
         errors = []
 
         if Os.path.exists(self.directory["in"]) == False:
@@ -119,9 +108,9 @@ class Parser:
         if len(errors):
             self.errorsSignal(errors)
         else:
-            self.checkFile()
+            self.check_file()
 
-    def checkFile(self):
+    def check_file(self):
 
         errors = []
 
@@ -134,31 +123,10 @@ class Parser:
         if len(errors):
             self.errorsSignal(errors)
         else:
-            self.checkFileExtension()
+            self.check_file_extension()
 
-    def checkFileExtension(self):
 
-        errors = []
-        extention = Pt.Path(self.file["in"]).suffix
-
-        if extention in self.extentions == False:
-            errors.append("ERR_FILE_EXTENTION " + self.file["in"])
-
-        if len(errors):
-            self.errorsSignal(errors)
-        else:
-            self.handlerFile(extention)
-
-    def handlerFile(self, extention):
-
-        if extention == '.xls' or extention == '.xlsx':
-            self.ExcelHandler(extention)
-        elif extention == '.doc' or extention == '.docx':
-            self.WordHandler(extention)
-        elif extention == '.pdf':
-            self.PdfHandler()
-
-    def PsClean(self, df):
+    def ps_cleaner(self, df):
 
         df.replace(to_replace='\(cid\:[0-9]+\)', value='', inplace=True, regex=True)
         df.replace(to_replace='[\\n\\r\\t]', value='', inplace=True, regex=True)
@@ -169,247 +137,6 @@ class Parser:
         df.drop_duplicates(keep="first", inplace=True)
 
         return df
-
-    def cutPdfPages(self, list, num):
-
-        part_len = Mt.ceil(len(list) / num)
-
-        return [list[part_len * k:part_len * (k + 1)] for k in range(0, num)]
-
-    def PdfHandlerFilterPageSize(self, width, height, rotate, numPage):
-
-        success = False
-        width = round(float(width))
-        height = round(float(height))
-
-        if height < width:
-            width, height = height, width
-
-        for index in self.sizesPages:
-
-            sizePage = self.sizesPages[index]
-
-            if 'width' in sizePage and 'height' in sizePage:
-
-                if width <= sizePage['width'] and height <= sizePage['height']:
-                    success = True
-                    break
-
-        return success
-
-    def PdfHandler(self):
-
-        fileIn = Pp2.PdfFileReader(self.file["in"], strict=False)
-
-        if fileIn is not None and fileIn.getNumPages() > 0:
-
-            pdfPages = []
-            pdf = Pp2.PdfFileReader(self.file["in"], strict=False)
-            numPages = pdf.getNumPages();
-
-            for numPage in range(0, numPages):
-
-                pdfPage = pdf.getPage(numPage)
-
-                if self.PdfHandlerFilterPageSize(pdfPage.mediaBox.getWidth(), pdfPage.mediaBox.getHeight(),
-                                                 pdfPage.get('/Rotate'), numPage):
-                    pdfPages.append(numPage)
-
-            numPages = len(pdfPages)
-
-            if numPages:
-
-                print('PdfHandler -> ', numPages)
-
-                pdfPages = self.cutPdfPages(pdfPages, self.cutPartsPdf)
-
-                if len(pdfPages):
-                    with Mp.Manager() as manager:
-
-                        self.manager = manager.list()
-                        self.managerProcess = list()
-
-                        for processPage in pdfPages:
-                            if len(processPage):
-                                self.PdfThreadPagesHandlerStart(processPage, numPages)
-
-                        if len(self.managerProcess):
-                            for process in self.managerProcess:
-                                process.join()
-            else:
-                self.errorsSignal('ERR_FILE_ERROR')
-
-        else:
-            self.errorsSignal('ERR_FILE_ERROR')
-
-    def PdfThreadPagesHandlerStart(self, threadPage, numPages):
-        th = Mp.Process(target=self.PdfThreadPagesHandler, args=(threadPage, numPages))
-        th.start()
-        self.managerProcess.append(th)
-
-    def PdfThreadPagesHandler(self, pages, numPages):
-        for page in pages:
-            print('PdfThreadPagesHandler -> ', page)
-            self.PdfPageHandler(self.file["in"], page)
-            self.PdfThreadPagesHandlerFinish(numPages)
-
-    def PdfThreadPagesHandlerFinish(self, numPages):
-
-        if len(self.manager) == numPages:
-
-            result = list()
-
-            for item in self.manager:
-                if item is not None:
-                    result.append(item)
-
-            self.data = result
-
-            self.handlerData()
-
-    def PdfPageHandler(self, path, page):
-
-        tables = Ct.read_pdf(path, flavor='stream', edge_tol=500, row_tol=15, pages=str(page))
-
-        if tables:
-            result = None
-
-            for table in tables:
-
-                data = table.df
-                data = self.PsClean(data)
-                data = Jn.loads(data.to_json(orient="values"))
-
-                if data:
-
-                    data = self.prepareData(data)
-
-                    if data:
-                        if result is not None:
-                            result += data
-                        else:
-                            result = data
-
-                        # Ct.plot(table, kind='textedge').show()
-
-            self.manager.insert(page, result)
-
-    def WordHandler(self, extention):
-
-        if (extention == '.doc'):
-            Sp.call(
-                ['soffice', '--headless', '--convert-to', 'docx', self.file["in"], '--outdir', self.directory["in"]])
-            old_path = self.file["in"]
-            path = Pt.Path(self.file["in"])
-            self.file["in"] = path.with_name(path.stem + ".docx")
-
-            # Os.unlink(old_path)
-
-        doc = Dc.Document(self.file["in"])
-        tables = []
-
-        for section in doc.sections:
-
-            if section.header is not None:
-                if section.header.tables is not None:
-                    for header in section.header.tables:
-                        tables.append(header)
-
-        if len(doc.tables):
-            for table in doc.tables:
-                tables.append(table)
-
-        # for section in doc.sections:
-        #    if section.footer is not None:
-        #        if section.footer.tables is not None:
-        #            for footer in section.footer.tables:
-        #                tables.append(footer)
-
-        if len(tables):
-            self.WordLoadTables(tables)
-
-    def WordLoadTables(self, tables):
-
-        data = {}
-        irow = 0
-
-        # print('WordLoadTables')
-
-        if len(tables):
-            for table in tables:
-                if len(table.rows):
-                    for row in table.rows:
-
-                        # if irow < 10:
-
-                        if len(row.cells):
-
-                            vcell = {}
-                            icell = 0
-
-                            for cell in row.cells:
-                                vcell[icell] = cell.text
-                                icell += 1
-
-                            if len(vcell):
-                                if irow == 0:
-                                    data[irow] = ";".join('"' + str(x) + '"' for x in range(0, len(vcell)))
-                                    irow += 1
-
-                                data[irow] = ";".join('"' + str(x) + '"' for x in vcell.values())
-                                irow += 1
-
-        if len(data):
-
-            data = "\r\n".join(str(x) for x in data.values())
-            data = Ps.read_csv(Io.StringIO(data), sep=';')
-            data = self.PsClean(data)
-            data = Jn.loads(data.to_json(orient="values"))
-
-            if data:
-                data = self.prepareData(data)
-
-                if data:
-                    self.data.append(data)
-
-        self.handlerData()
-
-    def ExcelHandler(self, extention):
-
-        sheets_names = self.ExcelGetSheets(self.file["in"])
-
-        if len(sheets_names):
-            for sheet_name in sheets_names:
-
-                data = self.ExcelLoadSheet(sheet_name)
-                data = self.PsClean(data)
-                data = Jn.loads(data.to_json(orient="values"))
-
-                if data:
-                    data = self.prepareData(data)
-
-                    if data:
-                        self.data.append(data)
-
-        self.handlerData()
-
-    def ExcelLoadSheet(self, name):
-
-        sheet = Ps.read_excel(self.file["in"], engine="openpyxl", sheet_name=str(name))
-
-        return sheet
-
-    def ExcelGetSheets(self, path):
-
-        sheets = []
-
-        with Zf.ZipFile(path, 'r') as zip_ref:
-            xml = zip_ref.read("xl/workbook.xml").decode("utf-8")
-
-            for s_tag in Re.findall("<sheet [^>]*", xml):
-                sheets.append(Re.search('name="[^"]*', s_tag).group(0)[6:])
-
-        return sheets
 
     def prepareData(self, data):
 
