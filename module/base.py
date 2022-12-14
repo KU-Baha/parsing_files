@@ -14,9 +14,6 @@ sys.setrecursionlimit(15000)
 class BaseParser:
     debug = False
     params = None
-    manager = None
-    manager_process = None
-    cut_parts_pdf = math.ceil(int(mp.cpu_count()) / 1)
     minimum_columns = 3
 
     path_handler_site = '/opt/php81/bin/php /var/www/www-root/data/www/costana.testdom.online/artisan parser_check:check '
@@ -58,51 +55,55 @@ class BaseParser:
     ]
 
     def __init__(self, directory, file, params):
-        print(params)
-        errors = []
-
-        if params is not None:
+        if params:
             self.params = params
 
-        if directory is not None:
-            if directory["in"] is not None:
-                self.directory["in"] = directory["in"]
-            else:
-                errors.append("ERR_DIR_IN")
-
-            if directory["out"] is not None:
-                self.directory["out"] = directory["out"]
-            else:
-                errors.append("ERR_DIR_OUT")
-        else:
-            errors.append("ERR_DIR")
-
-        if file is not None:
-            if file["in"] is not None:
-                self.file["in"] = file["in"]
-            else:
-                errors.append("ERR_FILE_IN")
-
-            if directory["out"] is not None:
-                self.file["out"] = file["out"]
-            else:
-                errors.append("ERR_FILE_OUT")
-        else:
-            errors.append("ERR_FILE")
+        errors = self.validate(directory, file)
 
         if len(errors):
             self.errors_signal(errors)
         else:
             self.check_directory()
 
+    def validate(self, directory, file):
+        errors = []
+
+        if directory:
+            if directory.get("in"):
+                self.directory["in"] = directory["in"]
+            else:
+                errors.append("ERR_DIR_IN")
+
+            if directory.get("out"):
+                self.directory["out"] = directory["out"]
+            else:
+                errors.append("ERR_DIR_OUT")
+        else:
+            errors.append("ERR_DIR")
+
+        if file:
+            if file.get("in"):
+                self.file["in"] = file["in"]
+            else:
+                errors.append("ERR_FILE_IN")
+
+            if directory.get("out"):
+                self.file["out"] = file["out"]
+            else:
+                errors.append("ERR_FILE_OUT")
+        else:
+            errors.append("ERR_FILE")
+
+        return errors
+
     def check_directory(self):
         errors = []
 
-        if not os.path.exists(self.directory.get("in")):
+        if not os.path.exists(self.directory.get("in", "")):
             errors.append(f"ERR_DIR_IN_EXIST {self.directory.get('in')}")
 
-        if not os.path.exists(self.directory["out"]):
-            os.mkdir(self.directory["out"])
+        if not os.path.exists(self.directory.get("out", "")):
+            os.mkdir(self.directory.get("out", ""))
 
         if len(errors):
             self.errors_signal(errors)
@@ -110,14 +111,13 @@ class BaseParser:
             self.check_file()
 
     def check_file(self):
-
         errors = []
 
-        if not os.path.exists(self.file["in"]):
-            errors.append("ERR_FILE_IN_EXIST " + self.file["in"])
+        if not os.path.exists(self.file.get("in", "")):
+            errors.append("ERR_FILE_IN_EXIST " + self.file.get("in", ""))
 
-        if not os.path.exists(self.file["out"]):
-            open(self.file["out"], "w").close()
+        if not os.path.exists(self.file.get("out", "")):
+            open(self.file.get("out", ""), "w").close()
 
         if len(errors):
             self.errors_signal(errors)
@@ -137,7 +137,7 @@ class BaseParser:
 
         current_data = data
 
-        for indexRow, row in enumerate(current_data):
+        for _, row in enumerate(current_data):
             if len(row) < self.minimum_columns:
                 current_data.remove(row)
                 self.prepare_data(data)
@@ -153,7 +153,7 @@ class BaseParser:
     def prepare_row_before(self, row):
         var = 0
 
-        for indexCol, col in enumerate(row):
+        for _, col in enumerate(row):
             if col:
                 var += 1
 
@@ -162,7 +162,7 @@ class BaseParser:
     def prepare_row_after(self, row):
         var = 0
 
-        for indexCol, col in enumerate(row):
+        for _, col in enumerate(row):
             tmp = re.sub(r"[^А-Яа-яёЁ]", "", str(col), 0, re.MULTILINE)  # [^A-Za-zА-Яа-я]
 
             if len(tmp):
@@ -172,19 +172,19 @@ class BaseParser:
 
     def prepare_page_table_head(self, index, page):
         merge_row = False
-        lastIndexRow = None
-        lastRow = None
+        last_index_row = None
+        last_row = None
 
-        for indexRow, row in enumerate(page):
+        for index_row, row in enumerate(page):
             if merge_row:
-                newRow = self.merge_row(lastRow, row)
-                page.insert(lastIndexRow, newRow)
-                del page[lastIndexRow + 1]
-                del page[lastIndexRow + 1]
+                new_row = self.merge_row(last_row, row)
+                page.insert(last_index_row, new_row)
+                del page[last_index_row + 1]
+                del page[last_index_row + 1]
                 self.prepare_page_table_head(index, page)
                 break
 
-            for indexCell, cell in enumerate(row):
+            for index_cell, cell in enumerate(row):
                 cell = str(cell).strip()
 
                 if not len(cell):
@@ -199,8 +199,8 @@ class BaseParser:
                 columns = self.data_columns.copy()
 
                 for column in dict(columns):
-                    for columnElement in columns[column]:
-                        result = re.match(r"^" + columnElement.lower(), str(cell).lower())
+                    for column_element in columns[column]:
+                        result = re.match(r"^" + column_element.lower(), str(cell).lower())
 
                         if result:
                             entry = True
@@ -210,24 +210,24 @@ class BaseParser:
                     merge_row = True
                     break
 
-            lastIndexRow = indexRow
-            lastRow = row
+            last_index_row = index_row
+            last_row = row
 
     def prepare_age_table_body(self, index, page):
         merge_row = False
-        lastIndexRow = None
-        lastRow = None
+        last_index_row = None
+        last_row = None
 
-        for indexRow, row in enumerate(page):
+        for index_row, row in enumerate(page):
             if merge_row:
-                newRow = self.merge_row(lastRow, row)
-                page.insert(lastIndexRow, newRow)
-                del page[lastIndexRow + 1]
-                del page[lastIndexRow + 1]
+                new_row = self.merge_row(last_row, row)
+                page.insert(last_index_row, new_row)
+                del page[last_index_row + 1]
+                del page[last_index_row + 1]
                 self.prepare_page_table_head(index, page)
                 break
 
-            for indexCell, cell in enumerate(row):
+            for index_cell, cell in enumerate(row):
                 cell = cell.strip()
 
                 if not len(cell):
@@ -241,61 +241,59 @@ class BaseParser:
                 merge_row = True
                 break
 
-            lastIndexRow = indexRow
-            lastRow = row
+            last_index_row = index_row
+            last_row = row
 
-    def merge_row(self, firstRow, lastRow):
-
+    def merge_row(self, first_row, last_row):
         row = []
 
-        if not firstRow and not lastRow:
+        if not first_row and not last_row:
             return row
 
-        for index, value in enumerate(firstRow):
-            if not lastRow[index]:
+        for index, value in enumerate(first_row):
+            if not last_row[index]:
                 row.append(value)
                 continue
 
             if not len(value):
-                row.append(lastRow[index])
+                row.append(last_row[index])
                 continue
 
             symbol = value[-1]
 
             if symbol == ',' or symbol == '-':
-                row.append(value + lastRow[index])
+                row.append(value + last_row[index])
             else:
-                row.append(value + " " + lastRow[index])
+                row.append(value + " " + last_row[index])
 
         return row
 
-    def search_head(self, row, step=1):
+    def search_head(self, row):
 
         output = {}
-        hiddenColumns = []
         columns = self.data_columns.copy()
 
-        for indexCell, valueCell in enumerate(row):
-            valueCell = str(valueCell)
+        for index_cell, value_cell in enumerate(row):
+            value_cell = str(value_cell)
 
-            if not len(valueCell):
+            if not len(value_cell):
                 continue
 
             for column in dict(columns):
-                for columnElement in columns[column]:
+                for column_element in columns[column]:
 
-                    valueCell = valueCell.strip()
-                    valueCell = re.sub(r"[^\w]|[_][^,]", "", valueCell, 0, re.MULTILINE)
+                    value_cell = value_cell.strip()
+                    value_cell = re.sub(r"[^\w]|[_][^,]", "", value_cell, 0, re.MULTILINE)
 
-                    if not valueCell:
+                    if not value_cell:
                         continue
 
-                    result = re.match(r"^" + columnElement.lower(), valueCell.lower())
+                    result = re.match(r"^" + column_element.lower(), value_cell.lower())
 
                     if not result:
                         continue
 
-                    output[column] = indexCell
+                    output[column] = index_cell
 
                     if column not in columns:
                         continue
@@ -306,7 +304,6 @@ class BaseParser:
             return {"output": output, "length": len(row)}
 
     def search_head_after(self, result):
-
         if not result and "output" not in result and "length" not in result:
             return
 
@@ -324,17 +321,21 @@ class BaseParser:
     def search_data(self, row):
         result = {}
 
-        if len(row) == self.data_columns_search_length:
-            for column in self.data_columns_search:
-                index = self.data_columns_search[column]
+        if len(row) != self.data_columns_search_length:
+            return
 
-                if row[index]:
-                    result[column] = row[index]
+        for column in self.data_columns_search:
+            index = self.data_columns_search[column]
+
+            if not row[index]:
+                continue
+
+            result[column] = row[index]
 
         if len(result):
             return result
 
-    def prepare_signal(self, status, statusText=[""]):
+    def prepare_signal(self, status, status_text=[""]):
         command = ""
 
         if not self.path_handler_site and not len(self.path_handler_site) \
@@ -353,7 +354,7 @@ class BaseParser:
                 value = status
 
             if param == "statusText":
-                value = "".join(statusText)
+                value = "".join(status_text)
 
             command += "=".join(["--" + param, '"' + str(value) + '"'])
             command += " "
@@ -378,7 +379,6 @@ class BaseParser:
         os.system(self.prepare_signal(0, errors))
 
     def handler_data(self):
-
         if not self.data:
             return
 
@@ -394,18 +394,14 @@ class BaseParser:
             self.errors_signal(errors)
 
     def handler_data_before(self):
-        for indexPage, page in enumerate(self.data):
-            self.prepare_page_table_head(indexPage, page)
-
-        # for indexPage, page in enumerate(self.data):
-
-        #    self.prepare_age_table_body(indexPage, page)
+        for index_page, page in enumerate(self.data):
+            self.prepare_page_table_head(index_page, page)
 
     def handler_data_after(self):
-        for indexPage, page in enumerate(self.data):
+        for index_page, page in enumerate(self.data):
             if not len(page):
                 continue
-            for indexRow, row in enumerate(page):
+            for index_row, row in enumerate(page):
                 if not len(self.data_columns_search):
                     result = self.search_head(row)
 
@@ -424,10 +420,10 @@ class BaseParser:
                         else:
                             self.search_head_reset()
 
-                del page[indexRow]
+                del page[index_row]
 
                 if not len(page):
-                    del self.data[indexPage]
+                    del self.data[index_page]
 
                 self.handler_data_after()
                 break
@@ -472,5 +468,5 @@ class BaseParser:
 
             elements.appendChild(element)
 
-        with open(self.file["out"], "wb") as file:
+        with open(self.file.get("out", ""), "wb") as file:
             file.write(xml.toprettyxml(indent="\t", encoding="utf-8"))

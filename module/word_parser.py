@@ -10,10 +10,10 @@ from module.base import BaseParser
 
 class WordPaser(BaseParser):
     def word_handler(self, extention):
-        if (extention == '.doc'):
+        if extention == '.doc':
             subprocess.call(
                 ['soffice', '--headless', '--convert-to', 'docx', self.file["in"], '--outdir', self.directory["in"]])
-            old_path = self.file["in"]
+            # old_path = self.file["in"]
             path = pathlib.Path(self.file["in"])
             self.file["in"] = path.with_name(path.stem + ".docx")
 
@@ -25,20 +25,16 @@ class WordPaser(BaseParser):
         for section in doc.sections:
             if not section.header:
                 continue
+
             if not section.header.tables:
                 continue
+
             for header in section.header.tables:
                 tables.append(header)
 
         if len(doc.tables):
             for table in doc.tables:
                 tables.append(table)
-
-        # for section in doc.sections:
-        #    if section.footer is not None:
-        #        if section.footer.tables is not None:
-        #            for footer in section.footer.tables:
-        #                tables.append(footer)
 
         if not len(tables):
             return
@@ -56,8 +52,8 @@ class WordPaser(BaseParser):
             for table in tables:
                 if not len(table.rows):
                     continue
+
                 for row in table.rows:
-                    # if irow < 10:
                     if not len(row.cells):
                         continue
 
@@ -78,16 +74,22 @@ class WordPaser(BaseParser):
                     data[irow] = ";".join('"' + str(x) + '"' for x in vcell.values())
                     irow += 1
 
-        if len(data):
-            data = "\r\n".join(str(x) for x in data.values())
-            data = pandas.read_csv(io.StringIO(data), sep=';')
-            data = self.ps_cleaner(data)
-            data = json.loads(data.to_json(orient="values"))
+        if not len(data):
+            self.handler_data()
+            return
 
-            if data:
-                data = self.prepareData(data)
+        data = "\r\n".join(str(x) for x in data.values())
+        data = pandas.read_csv(io.StringIO(data), sep=';')
+        data = self.ps_cleaner(data)
+        data = json.loads(data.to_json(orient="values"))
 
-                if data:
-                    self.data.append(data)
+        if not data:
+            self.handler_data()
+            return
 
-        self.handlerData()
+        data = self.prepare_data(data)
+
+        if data:
+            self.data.append(data)
+
+        self.handler_data()
