@@ -1,39 +1,38 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-import sys as Sys
-import os as Os
-import pathlib as Pt
-import re as Re
-import numpy as Np
+import sys
+import os
+import re
+import numpy
 from xml.dom import minidom
-import multiprocessing as Mp
-import math as Mt
+import multiprocessing as mp
+import math
 
-Sys.setrecursionlimit(15000)
+sys.setrecursionlimit(15000)
 
 
 class BaseParser:
     debug = False
     params = None
     manager = None
-    managerProcess = None
-    cutPartsPdf = Mt.ceil(int(Mp.cpu_count()) / 1)
-    minimumColumns = 3
+    manager_process = None
+    cut_parts_pdf = math.ceil(int(mp.cpu_count()) / 1)
+    minimum_columns = 3
 
-    pathHandlerSite = '/opt/php81/bin/php /var/www/www-root/data/www/costana.testdom.online/artisan parser_check:check '
-    paramsHandlerSite = ["fileId", "objectId", "projectId", "status", "statusText"]
+    path_handler_site = '/opt/php81/bin/php /var/www/www-root/data/www/costana.testdom.online/artisan parser_check:check '
+    params_handler_site = ["fileId", "objectId", "projectId", "status", "statusText"]
     directory = {"in": None, "out": None}
     file = {"in": None, "out": None}
     extentions = [".xls", ".doc", ".xlsx", ".docx", ".pdf"]
-    sizesPages = {
+    sizes_pages = {
         'a4': {'width': 595, 'height': 842},
         'a3': {'width': 842, 'height': 1191}
     }
     data = []
-    dataOutput = []
-    dataColumnsSearch = []
-    dataColumnsSearchLength = 0
-    dataColumns = {
+    data_output = []
+    data_columns_search = []
+    data_columns_search_length = 0
+    data_columns = {
         'position': ['поз', 'позиция', '#', '№'],
         'name': ['наим', 'наименование', 'наз', 'название'],
         'code': ['код', 'артикул', 'арт'],
@@ -44,7 +43,7 @@ class BaseParser:
         'weight': ['масса', 'вес'],
         'note': ['примечание']
     }
-    dataColumnsResult = [
+    data_columns_result = [
         'name',
         'code',
         'type',
@@ -92,21 +91,21 @@ class BaseParser:
             errors.append("ERR_FILE")
 
         if len(errors):
-            self.errorsSignal(errors)
+            self.errors_signal(errors)
         else:
             self.check_directory()
 
     def check_directory(self):
         errors = []
 
-        if Os.path.exists(self.directory["in"]) == False:
-            errors.append("ERR_DIR_IN_EXIST" + self.directory["in"])
+        if not os.path.exists(self.directory.get("in")):
+            errors.append(f"ERR_DIR_IN_EXIST {self.directory.get('in')}")
 
-        if Os.path.exists(self.directory["out"]) == False:
-            Os.mkdir(self.directory["out"])
+        if not os.path.exists(self.directory["out"]):
+            os.mkdir(self.directory["out"])
 
         if len(errors):
-            self.errorsSignal(errors)
+            self.errors_signal(errors)
         else:
             self.check_file()
 
@@ -114,330 +113,333 @@ class BaseParser:
 
         errors = []
 
-        if Os.path.exists(self.file["in"]) == False:
+        if not os.path.exists(self.file["in"]):
             errors.append("ERR_FILE_IN_EXIST " + self.file["in"])
 
-        if Os.path.exists(self.file["out"]) == False:
+        if not os.path.exists(self.file["out"]):
             open(self.file["out"], "w").close()
 
         if len(errors):
-            self.errorsSignal(errors)
-        else:
-            self.check_file_extension()
-
+            self.errors_signal(errors)
 
     def ps_cleaner(self, df):
-
         df.replace(to_replace='\(cid\:[0-9]+\)', value='', inplace=True, regex=True)
         df.replace(to_replace='[\\n\\r\\t]', value='', inplace=True, regex=True)
-        df.replace(to_replace='None', inplace=True, value=Np.nan)
-        df.replace(Np.nan, '', regex=True, inplace=True)
+        df.replace(to_replace='None', inplace=True, value=numpy.nan)
+        df.replace(numpy.nan, '', regex=True, inplace=True)
         df.dropna(axis=0, inplace=True)
         df.dropna(axis=1, inplace=True)
         df.drop_duplicates(keep="first", inplace=True)
 
         return df
 
-    def prepareData(self, data):
+    def prepare_data(self, data):
 
         current_data = data
 
         for indexRow, row in enumerate(current_data):
-            if len(row) < self.minimumColumns:
+            if len(row) < self.minimum_columns:
                 current_data.remove(row)
-                self.prepareData(data)
+                self.prepare_data(data)
                 break
 
-            else:
-                if not self.prepareRowAfter(row):
-                    current_data.remove(row)
-                    self.prepareData(data)
-                    break
+            if not self.prepare_row_after(row):
+                current_data.remove(row)
+                self.prepare_data(data)
+                break
 
-        return current_data;
+        return current_data
 
-    def prepareRowBefore(self, row):
-
+    def prepare_row_before(self, row):
         var = 0
 
         for indexCol, col in enumerate(row):
-            if col is not None:
+            if col:
                 var += 1
 
         return var
 
-    def prepareRowAfter(self, row):
-
+    def prepare_row_after(self, row):
         var = 0
 
         for indexCol, col in enumerate(row):
-            tmp = Re.sub(r"[^А-Яа-яёЁ]", "", str(col), 0, Re.MULTILINE)  # [^A-Za-zА-Яа-я]
+            tmp = re.sub(r"[^А-Яа-яёЁ]", "", str(col), 0, re.MULTILINE)  # [^A-Za-zА-Яа-я]
 
             if len(tmp):
                 var += 1
 
         return var
 
-    def preparePageTableHead(self, index, page):
-
-        mergeRow = False
+    def prepare_page_table_head(self, index, page):
+        merge_row = False
         lastIndexRow = None
         lastRow = None
 
         for indexRow, row in enumerate(page):
-            if mergeRow == True:
-                newRow = self.mergeRow(lastRow, row)
+            if merge_row:
+                newRow = self.merge_row(lastRow, row)
                 page.insert(lastIndexRow, newRow)
                 del page[lastIndexRow + 1]
                 del page[lastIndexRow + 1]
-                self.preparePageTableHead(index, page)
+                self.prepare_page_table_head(index, page)
                 break
 
             for indexCell, cell in enumerate(row):
                 cell = str(cell).strip()
 
-                if len(cell):
-                    symbol = cell[-1]
+                if not len(cell):
+                    continue
 
-                    if symbol == ',' or symbol == '-':
+                symbol = cell[-1]
 
-                        entry = False
-                        columns = self.dataColumns.copy()
+                if symbol != ',' or symbol != '-':
+                    continue
 
-                        for column in dict(columns):
-                            for columnElement in columns[column]:
-                                result = Re.match(r"^" + columnElement.lower(), str(cell).lower())
+                entry = False
+                columns = self.data_columns.copy()
 
-                                if result is not None:
-                                    entry = True
-                                    break
+                for column in dict(columns):
+                    for columnElement in columns[column]:
+                        result = re.match(r"^" + columnElement.lower(), str(cell).lower())
 
-                        if entry == True:
-                            mergeRow = True
+                        if result:
+                            entry = True
                             break
+
+                if entry:
+                    merge_row = True
+                    break
 
             lastIndexRow = indexRow
             lastRow = row
 
-    def preparePageTableBody(self, index, page):
-
-        mergeRow = False
+    def prepare_age_table_body(self, index, page):
+        merge_row = False
         lastIndexRow = None
         lastRow = None
 
         for indexRow, row in enumerate(page):
-            if mergeRow == True:
-                newRow = self.mergeRow(lastRow, row)
+            if merge_row:
+                newRow = self.merge_row(lastRow, row)
                 page.insert(lastIndexRow, newRow)
                 del page[lastIndexRow + 1]
                 del page[lastIndexRow + 1]
-                self.preparePageTableHead(index, page)
+                self.prepare_page_table_head(index, page)
                 break
 
             for indexCell, cell in enumerate(row):
                 cell = cell.strip()
 
-                if len(cell):
-                    symbol = cell[-1]
+                if not len(cell):
+                    continue
 
-                    if symbol == ',' or symbol == '-':
-                        mergeRow = True
-                        break
+                symbol = cell[-1]
+
+                if symbol != ',' or symbol != '-':
+                    continue
+
+                merge_row = True
+                break
 
             lastIndexRow = indexRow
             lastRow = row
 
-    def mergeRow(self, firstRow, lastRow):
+    def merge_row(self, firstRow, lastRow):
 
         row = []
 
-        if firstRow is not None and lastRow is not None:
-            for index, value in enumerate(firstRow):
-                if lastRow[index] is not None:
-                    if len(value):
-                        symbol = value[-1]
+        if not firstRow and not lastRow:
+            return row
 
-                        if symbol == ',' or symbol == '-':
-                            row.append(value + lastRow[index])
-                        else:
-                            row.append(value + " " + lastRow[index])
-                    else:
-                        row.append(lastRow[index])
-                else:
-                    row.append(value)
+        for index, value in enumerate(firstRow):
+            if not lastRow[index]:
+                row.append(value)
+                continue
+
+            if not len(value):
+                row.append(lastRow[index])
+                continue
+
+            symbol = value[-1]
+
+            if symbol == ',' or symbol == '-':
+                row.append(value + lastRow[index])
+            else:
+                row.append(value + " " + lastRow[index])
 
         return row
 
-    def searchHead(self, row, step=1):
+    def search_head(self, row, step=1):
 
         output = {}
         hiddenColumns = []
-        columns = self.dataColumns.copy()
+        columns = self.data_columns.copy()
 
         for indexCell, valueCell in enumerate(row):
             valueCell = str(valueCell)
 
-            if len(valueCell):
-                for column in dict(columns):
-                    for columnElement in columns[column]:
+            if not len(valueCell):
+                continue
 
-                        valueCell = valueCell.strip()
-                        valueCell = Re.sub(r"[^\w]|[_][^,]", "", valueCell, 0, Re.MULTILINE)
+            for column in dict(columns):
+                for columnElement in columns[column]:
 
-                        if valueCell is not None:
-                            result = Re.match(r"^" + columnElement.lower(), valueCell.lower())
+                    valueCell = valueCell.strip()
+                    valueCell = re.sub(r"[^\w]|[_][^,]", "", valueCell, 0, re.MULTILINE)
 
-                            if result is not None:
-                                output[column] = indexCell
+                    if not valueCell:
+                        continue
 
-                                if column in columns:
-                                    del columns[column]
+                    result = re.match(r"^" + columnElement.lower(), valueCell.lower())
+
+                    if not result:
+                        continue
+
+                    output[column] = indexCell
+
+                    if column not in columns:
+                        continue
+
+                    del columns[column]
 
         if len(output):
             return {"output": output, "length": len(row)}
 
-    def searchHeadAfter(self, result):
+    def search_head_after(self, result):
 
-        if result is not None and "output" in result and "length" in result:
-            if result["output"] is not None and result["length"] is not None:
-                if result["length"] >= self.minimumColumns and len(result["output"]) >= self.minimumColumns:
-                    self.dataColumnsSearch = result["output"]
-                    self.dataColumnsSearchLength = result["length"]
+        if not result and "output" not in result and "length" not in result:
+            return
 
-    def searchHeadReset(self):
+        if not result.get("output") and not result.get("length"):
+            return
 
-        self.dataColumnsSearch = []
-        self.dataColumnsSearchLength = 0
+        if result.get("length") >= self.minimum_columns and len(result.get("output")) >= self.minimum_columns:
+            self.data_columns_search = result.get("output")
+            self.data_columns_search_length = result.get("length")
 
-    def searchData(self, row):
+    def search_head_reset(self):
+        self.data_columns_search = []
+        self.data_columns_search_length = 0
 
+    def search_data(self, row):
         result = {}
 
-        if (len(row) == self.dataColumnsSearchLength):
-            for column in self.dataColumnsSearch:
-                index = self.dataColumnsSearch[column]
+        if len(row) == self.data_columns_search_length:
+            for column in self.data_columns_search:
+                index = self.data_columns_search[column]
 
-                if row[index] is not None:
+                if row[index]:
                     result[column] = row[index]
 
         if len(result):
             return result
 
-    def prepareSignal(self, status, statusText=[""]):
-
+    def prepare_signal(self, status, statusText=[""]):
         command = ""
 
-        if self.pathHandlerSite is not None and len(
-                self.pathHandlerSite) and self.paramsHandlerSite is not None and len(self.paramsHandlerSite):
-            command = self.pathHandlerSite
+        if not self.path_handler_site and not len(self.path_handler_site) \
+                and not self.params_handler_site and not len(self.params_handler_site):
+            return command
 
-            for param in self.paramsHandlerSite:
+        command = self.path_handler_site
 
-                value = ""
+        for param in self.params_handler_site:
+            value = ""
 
-                if param in self.params:
-                    value = self.params[param]
+            if param in self.params:
+                value = self.params[param]
 
-                if param == "status":
-                    value = status
+            if param == "status":
+                value = status
 
-                if param == "statusText":
-                    value = "".join(statusText)
+            if param == "statusText":
+                value = "".join(statusText)
 
-                command += "=".join(["--" + param, '"' + str(value) + '"'])
-                command += " "
-
-        # print(command)
+            command += "=".join(["--" + param, '"' + str(value) + '"'])
+            command += " "
 
         return command
 
-    def successSignal(self):
-
+    def success_signal(self):
         print('status -> success')
 
-        if self.debug is not None and self.debug == False:
-            Os.system(self.prepareSignal(1))
+        if self.debug:
+            sys.exit()
 
-        Sys.exit()
+        os.system(self.prepare_signal(1))
 
-    def errorsSignal(self, errors):
+    def errors_signal(self, errors):
 
         print('status -> errors', errors)
 
-        if self.debug is not None and self.debug == False:
-            Os.system(self.prepareSignal(0, errors))
+        if self.debug:
+            sys.exit()
 
-        Sys.exit()
+        os.system(self.prepare_signal(0, errors))
 
-    def handlerData(self):
+    def handler_data(self):
 
-        if self.data:
+        if not self.data:
+            return
 
-            if len(self.data):
-                self.handlerDataBefore()
-                self.handlerDataAfter()
+        if len(self.data):
+            self.handler_data_before()
+            self.handler_data_after()
 
-            if len(self.dataOutput):
-                self.handlerDataFinish()
-                self.successSignal()
-            else:
-                errors = ['ERR_SEARCH_PARSE_0']
-                self.errorsSignal(errors)
+        if len(self.data_output):
+            self.handler_data_finish()
+            self.success_signal()
+        else:
+            errors = ['ERR_SEARCH_PARSE_0']
+            self.errors_signal(errors)
 
-    def handlerDataBefore(self):
-
+    def handler_data_before(self):
         for indexPage, page in enumerate(self.data):
-            self.preparePageTableHead(indexPage, page)
+            self.prepare_page_table_head(indexPage, page)
 
         # for indexPage, page in enumerate(self.data):
 
-        #    self.preparePageTableBody(indexPage, page)
+        #    self.prepare_age_table_body(indexPage, page)
 
-    def handlerDataAfter(self):
-
+    def handler_data_after(self):
         for indexPage, page in enumerate(self.data):
-            if len(page):
-                for indexRow, row in enumerate(page):
-                    if not len(self.dataColumnsSearch):
-                        result = self.searchHead(row)
+            if not len(page):
+                continue
+            for indexRow, row in enumerate(page):
+                if not len(self.data_columns_search):
+                    result = self.search_head(row)
 
-                        if result is not None and "output" in result and "length" in result:
-                            self.searchHeadAfter(result)
+                    if result and "output" in result and "length" in result:
+                        self.search_head_after(result)
+                else:
+                    result = self.search_head(row, 2)
 
+                    if result and "output" in result and "length" in result:
+                        self.search_head_after(result)
                     else:
+                        result = self.search_data(row)
 
-                        result = self.searchHead(row, 2)
-
-                        if result is not None and "output" in result and "length" in result:
-                            self.searchHeadAfter(result)
+                        if result:
+                            self.data_output.append(result)
                         else:
+                            self.search_head_reset()
 
-                            result = self.searchData(row)
+                del page[indexRow]
 
-                            if result is not None:
-                                self.dataOutput.append(result)
-                            else:
-                                self.searchHeadReset()
+                if not len(page):
+                    del self.data[indexPage]
 
-                    del page[indexRow]
+                self.handler_data_after()
+                break
 
-                    if len(page) == 0:
-                        del self.data[indexPage]
-
-                    self.handlerDataAfter()
-
-                    break
-
-    def handlerDataFinish(self):
-
+    def handler_data_finish(self):
         xml = minidom.Document()
         root = xml.createElement('root')
         xml.appendChild(root)
         elements = xml.createElement('elements')
         root.appendChild(elements)
 
-        for row in self.dataOutput:
-
+        for row in self.data_output:
             type = 'element'
             empty = 0
 
@@ -447,26 +449,28 @@ class BaseParser:
                 if not len(value):
                     empty += 1
 
-            if empty != len(row):
-                if len(row) - empty == 1 and "name" in row:
-                    if len(row["name"]):
-                        type = 'category'
+            if empty == len(row):
+                continue
 
-                element = xml.createElement('element')
-                element.setAttribute('type', type)
+            if len(row) - empty == 1 and "name" in row:
+                if len(row["name"]):
+                    type = 'category'
 
-                for column in self.dataColumnsResult:
-                    if type == 'category' and column != 'name':
-                        break
+            element = xml.createElement('element')
+            element.setAttribute('type', type)
 
-                    elementCell = xml.createElement(column)
+            for column in self.data_columns_result:
+                if type == 'category' and column != 'name':
+                    break
 
-                    if column in row:
-                        elementCell.appendChild(xml.createTextNode(str(row[column])))
+                elementCell = xml.createElement(column)
 
-                    element.appendChild(elementCell)
+                if column in row:
+                    elementCell.appendChild(xml.createTextNode(str(row[column])))
 
-                elements.appendChild(element)
+                element.appendChild(elementCell)
+
+            elements.appendChild(element)
 
         with open(self.file["out"], "wb") as file:
             file.write(xml.toprettyxml(indent="\t", encoding="utf-8"))

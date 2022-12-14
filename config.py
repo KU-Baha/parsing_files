@@ -1,6 +1,8 @@
+GUI = True
+
 params_error = False
 
-params = {
+params_dict = {
     "directoryIn": None,
     "directoryOut": None,
     "fileIn": None,
@@ -10,4 +12,4 @@ params = {
     "fileId": None
 }
 
-extentions = [".xls", ".doc", ".xlsx", ".docx", ".pdf"]
+extentions = [".xls", ".doc", ".xlsx", ".docx", ".pdf", ".xml"]
