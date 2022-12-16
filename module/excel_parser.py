@@ -8,7 +8,6 @@ from module.base import BaseParser
 
 class ExcelParser(BaseParser):
     def excel_handler(self):
-
         sheets_names = self.excel_get_sheets(self.file["in"])
 
         if not len(sheets_names):

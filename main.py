@@ -10,5 +10,13 @@ if __name__ == "__main__":
     else:
         _, *args = sys.argv
         params = check_args(args=args)
+
+        if not params:
+            sys.exit()
+
         extention = check_file_extension(file_path=params.get("fileIn"))
+
+        if not extention:
+            sys.exit()
+
         run_handler(params, extention)

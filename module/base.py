@@ -55,18 +55,16 @@ class BaseParser:
     ]
 
     def __init__(self, directory, file, params):
+        errors = self.validate(directory, file, params)
+
+        if errors:
+            self.errors_signal(errors)
+
+    def validate(self, directory, file, params):
+        errors = []
+
         if params:
             self.params = params
-
-        errors = self.validate(directory, file)
-
-        if len(errors):
-            self.errors_signal(errors)
-        else:
-            self.check_directory()
-
-    def validate(self, directory, file):
-        errors = []
 
         if directory:
             if directory.get("in"):
@@ -95,32 +93,6 @@ class BaseParser:
             errors.append("ERR_FILE")
 
         return errors
-
-    def check_directory(self):
-        errors = []
-
-        if not os.path.exists(self.directory.get("in", "")):
-            errors.append(f"ERR_DIR_IN_EXIST {self.directory.get('in')}")
-
-        if not os.path.exists(self.directory.get("out", "")):
-            os.mkdir(self.directory.get("out", ""))
-
-        if len(errors):
-            self.errors_signal(errors)
-        else:
-            self.check_file()
-
-    def check_file(self):
-        errors = []
-
-        if not os.path.exists(self.file.get("in", "")):
-            errors.append("ERR_FILE_IN_EXIST " + self.file.get("in", ""))
-
-        if not os.path.exists(self.file.get("out", "")):
-            open(self.file.get("out", ""), "w").close()
-
-        if len(errors):
-            self.errors_signal(errors)
 
     def ps_cleaner(self, df):
         df.replace(to_replace='\(cid\:[0-9]+\)', value='', inplace=True, regex=True)
@@ -268,7 +240,7 @@ class BaseParser:
 
         return row
 
-    def search_head(self, row):
+    def search_head(self, row, step=1):
 
         output = {}
         columns = self.data_columns.copy()
@@ -335,7 +307,7 @@ class BaseParser:
         if len(result):
             return result
 
-    def prepare_signal(self, status, status_text=[""]):
+    def prepare_signal(self, status, status_text=None):
         command = ""
 
         if not self.path_handler_site and not len(self.path_handler_site) \
@@ -354,7 +326,8 @@ class BaseParser:
                 value = status
 
             if param == "statusText":
-                value = "".join(status_text)
+                if status_text:
+                    value = "".join(status_text)
 
             command += "=".join(["--" + param, '"' + str(value) + '"'])
             command += " "
@@ -370,7 +343,6 @@ class BaseParser:
         os.system(self.prepare_signal(1))
 
     def errors_signal(self, errors):
-
         print('status -> errors', errors)
 
         if self.debug:

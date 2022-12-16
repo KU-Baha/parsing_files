@@ -43,6 +43,9 @@ def gui_mode():
 
     file_in = Button(text="File In", command=lambda: get_file_path(params_list[2]), state=ACTIVE)
     file_in.pack()
+
+    params_list.append(".xml")
+
     file_out = Button(text="File Out", command=lambda: get_file_path(params_list[3]), state=ACTIVE)
     file_out.pack()
 

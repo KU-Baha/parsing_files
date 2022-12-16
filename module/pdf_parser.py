@@ -12,9 +12,9 @@ class PdfParser(BaseParser):
     manager = None
     manager_process = None
 
-    def cut_pdf_pages(self, list, num):
-        part_len = math.ceil(len(list) / num)
-        return [list[part_len * k:part_len * (k + 1)] for k in range(0, num)]
+    def cut_pdf_pages(self, _list, num):
+        part_len = math.ceil(len(_list) / num)
+        return [_list[part_len * k:part_len * (k + 1)] for k in range(0, num)]
 
     def pdf_handler_filter_page_size(self, width, height, rotate, numPage):
         success = False

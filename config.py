@@ -1,4 +1,4 @@
-GUI = True
+GUI = False
 
 params_error = False
 
@@ -12,4 +12,4 @@ params_dict = {
     "fileId": None
 }
 
-extentions = [".xls", ".doc", ".xlsx", ".docx", ".pdf", ".xml"]
+extentions = [".xls", ".doc", ".xlsx", ".docx", ".pdf"]
