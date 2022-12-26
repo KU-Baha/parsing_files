@@ -37,24 +37,23 @@ class PdfParser(BaseParser):
         return success
 
     def pdf_handler(self):
-        file_in = py_pdf.PdfFileReader(self.file["in"], strict=False)
+        pdf = py_pdf.PdfFileReader(self.file["in"], strict=False)
 
-        if not file_in and file_in.getNumPages() < 0:
+        if not pdf and pdf.getNumPages() < 0:
             self.errors_signal('ERR_FILE_ERROR')
             return
 
         pdf_pages = []
-        pdf = py_pdf.PdfFileReader(self.file["in"], strict=False)
         num_pages = pdf.getNumPages()
 
-        for numPage in range(0, num_pages):
-            pdfPage = pdf.getPage(numPage)
+        for num_page in range(0, num_pages):
+            pdf_page = pdf.getPage(num_page)
 
-            if not self.pdf_handler_filter_page_size(pdfPage.mediaBox.getWidth(), pdfPage.mediaBox.getHeight(),
-                                                     pdfPage.get('/Rotate'), numPage):
+            if not self.pdf_handler_filter_page_size(pdf_page.mediaBox.getWidth(), pdf_page.mediaBox.getHeight(),
+                                                     pdf_page.get('/Rotate'), num_page):
                 continue
 
-            pdf_pages.append(numPage)
+            pdf_pages.append(num_page)
 
         num_pages = len(pdf_pages)
 
@@ -84,10 +83,10 @@ class PdfParser(BaseParser):
                 process.join()
 
     def pdf_thread_pages_handler_start(self, threadPage, num_pages):
-        print(self.pdf_thread_pages_handler(threadPage, num_pages))
-        # th = Mp.Process(target=self.pdf_thread_pages_handler, args=(threadPage, num_pages))
-        # th.start()
-        # self.managerProcess.append(th)
+        # print(self.pdf_thread_pages_handler(threadPage, num_pages))
+        th = mp.Process(target=self.pdf_thread_pages_handler, args=(threadPage, num_pages))
+        th.start()
+        self.managerProcess.append(th)
 
     def pdf_thread_pages_handler(self, pages, num_pages):
         for page in pages:
